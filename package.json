@@ -1,0 +1,66 @@
+{
+  "name": "tdd-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --content-base . --history-api-fallback",
+    "build": "webpack -p",
+    "dev": "webpack -d --watch",
+    "test": "jest || true",
+    "test:watch": "jest --watch || true"
+  },
+  "jest": {
+    "testRegex": ".*-specs.\\js",
+    "testPathDirs": [
+      "app/"
+    ],
+    "unmockedModulePathPatterns": [
+      "react",
+      "react-dom",
+      "react-addons-test-utils",
+      "fbjs",
+      "enzyme",
+      "cheerio",
+      "htmlparser2",
+      "lodash",
+      "domhandler",
+      "object.assign",
+      "define-properties",
+      "function-bind",
+      "object-keys",
+      "object.values",
+      "es-abstract"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.13.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "enzyme": "^2.4.1",
+    "immutable": "^3.8.1",
+    "jest": "^14.1.0",
+    "jest-cli": "^14.1.0",
+    "material-ui": "^0.15.4",
+    "path": "^0.12.7",
+    "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redirect": "^1.0.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "react-router-redux": "^4.0.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "sinon": "^1.17.5",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
+}

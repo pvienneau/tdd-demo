@@ -1,0 +1,2 @@
+export const SAVE_COMMENT = "SAVE_COMMENTS";
+export const DELETE_COMMENT = "DELETE_COMMENT";
